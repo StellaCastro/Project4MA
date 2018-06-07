@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/w40"
+        android:layout_height="@dimen/h40"
+        android:src="@drawable/paw_icon"
+        android:layout_margin="@dimen/margin10"
+        android:id="@+id/album_pic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Songs Name"
+        android:layout_toRightOf="@id/album_pic"
+        android:id="@+id/song_name"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:textSize="@dimen/ts16"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/album_pic"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="left"
+        android:layout_marginRight="@dimen/margin10"
+        android:text="Artist Name"
+        android:textSize="@dimen/ts14" />
+
+
+</RelativeLayout>

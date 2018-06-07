@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Project4MA</string>
+    <string name="welcome_label">Welcome!</string>
+    <string name="main_label">Main Menu</string>
+    <string name="Save_label">Your Save Music</string>
+    <string name="playlist_label">Your Playlists</string>
+    <string name="search_label">Search</string>
+    <string name="now_label">Now Playing</string>
+    <string name="summer_label">Your Summer List</string>
+    <string name="gym_label">Your Gym List</string>
+    <string name="relax_label">Your Relax List</string>
+    <string name="road_label">Your RoadTrip List</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="prev">Prev</string>
+    <string name="play">Play</string>
+    <string name="next">Next</string>
+    <string name="repeat">Repeat</string>
+    <string name="user_s_name">User\'s Name</string>
+    <string name="start">Start</string>
+
+</resources>

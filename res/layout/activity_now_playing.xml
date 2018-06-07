@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activities.NowPlaying">
+
+
+    <ImageView
+        android:layout_width="169dp"
+        android:layout_height="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/album_pic_now"
+        android:src="@drawable/paw_icon" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song name and artist name"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:id="@+id/namea_and_artist"
+        android:layout_below="@id/album_pic_now"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_texts">
+        <ImageView
+            style="@style/nowPlayingButtons"
+            android:src="@drawable/shuffle"
+            android:id="@+id/shuffle"
+            android:background="@color/pink1"/>
+        <ImageView
+            style="@style/nowPlayingButtons"
+            android:src="@drawable/back"
+            android:id="@+id/back"
+            android:background="@color/pink3"/>
+        <ImageView
+            style="@style/nowPlayingButtons"
+            android:src="@drawable/ic_stat_name"
+            android:id="@+id/play"
+            android:background="@color/pink2"/>
+        <ImageView
+            style="@style/nowPlayingButtons"
+            android:src="@drawable/next"
+            android:id="@+id/next"
+            android:background="@color/pink3"/>
+        <ImageView
+            style="@style/nowPlayingButtons"
+            android:src="@drawable/repeat"
+            android:id="@+id/repeat"
+            android:background="@color/pink1"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:id="@+id/button_texts"
+       android:layout_marginBottom="5dp">
+       <TextView
+           style="@style/noWPlayngText"
+           android:text="@string/shuffle"
+           android:background="@color/pink1"
+           android:id="@+id/shuffle_tv"/>
+       <TextView
+           style="@style/noWPlayngText"
+           android:text="@string/prev"
+           android:background="@color/pink3" />
+       <TextView
+           style="@style/noWPlayngText"
+           android:text="@string/play"
+           android:background="@color/pink2"
+           android:id="@+id/pause_tv"/>
+       <TextView
+           style="@style/noWPlayngText"
+           android:text="@string/next"
+           android:background="@color/pink3" />
+       <TextView
+           style="@style/noWPlayngText"
+           android:text="@string/repeat"
+           android:background="@color/pink1" />
+   </LinearLayout>
+
+</RelativeLayout>

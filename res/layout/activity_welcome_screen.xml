@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stars_background1"
+    tools:context=".Activities.WelcomeScreen">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/starh"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/star_logo"
+            android:layout_margin="@dimen/margin40"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_s_name"
+            android:textSize="@dimen/ts30"
+            android:inputType="textCapWords"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="@dimen/margin16"
+            android:id="@+id/user_name_input"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:textSize="@dimen/ts30"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_marginRight="@dimen/margin16"
+            android:gravity="center"
+            android:id="@+id/start_view"
+            android:clickable="true"
+            android:background="@color/pink1"/>
+
+    </RelativeLayout>
+
+
+

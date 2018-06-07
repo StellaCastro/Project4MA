@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.project4ma">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/star_logo"
+        android:label="@string/welcome_label"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.WelcomeScreen">
+        <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Activities.MainMenu"
+            android:label="@string/main_label"/>
+
+
+
+        <activity
+            android:name=".Activities.SaveMusic"
+            android:label="@string/Save_label"/>
+        <activity
+            android:name=".Activities.Playlist"
+            android:label="@string/playlist_label" />
+        <activity
+            android:name=".Activities.Search"
+            android:label="@string/search_label"
+            android:parentActivityName=".Activities.MainMenu"
+            />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Activities.MainMenu"/>
+
+
+
+        <activity
+            android:name=".Activities.NowPlaying"
+            android:label="@string/now_label"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Activities.MainMenu"/>
+        <activity
+            android:name=".Activities.SummerList"
+            android:label="@string/summer_label"
+            android:parentActivityName=".Activities.Playlist"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Activities.Playlist" />
+        <activity
+            android:name=".Activities.RelaxList"
+            android:label="@string/relax_label"
+            android:parentActivityName=".Activities.Playlist"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Activities.Playlist"/>
+
+        <activity
+            android:name=".Activities.RoaTripList"
+            android:label="@string/road_label"
+            android:parentActivityName=".Activities.Playlist">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.Playlist"/>
+
+        </activity>
+    </application>
+
+</manifest>
